@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {
+	text-align: center;
+}
+
+header {
+	margin-top: 120px;
+}
+
+h1 {
+	font-size: 1.8em; font-weight: 300;
+}
+
+#loginForm {
+	background-color: #FFFFFF;
+	display: inline-block;
+	margin: 14px;
+	padding: 40px 25px;
+	text-align: left;
+	width: 320px;
+}
+
+.button {
+	background-color: #2EA2CC;
+	border-radius: 4px;
+	color: #FFFFFF;
+	padding: 10px 18px;
+}

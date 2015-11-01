@@ -1,0 +1,51 @@
+@font-face {
+	font-family: 'icomoon';
+	src: url('../font/icomoon.eot?t2d2ze');
+	src: url('../font/icomoon.eot?#iefixt2d2ze') format('embedded-opentype'),
+		 url('../font/icomoon.woff?t2d2ze') format('woff'),
+		 url('../font/icomoon.ttf?t2d2ze') format('truetype'),
+		 url('../font/icomoon.svg?t2d2ze#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon"], [class*=" icon"] {
+	cursor: pointer;
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: normal;
+	line-height: 1;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.iconDashboard:before { content: "\e000"; }
+.iconPresentation:before { content: "\e001"; }
+.iconPencil:before { content: "\e002"; }
+.iconBargraph:before { content: "\e003"; }
+.iconTrainees:before { content: "\e004"; }
+.iconCalendar:before { content: "\e005"; }
+.iconMedal:before { content: "\e006"; }
+.iconTrainer:before { content: "\e007"; }
+.iconCompany:before { content: "\e008"; }
+.iconNotebook:before { content: "\e009"; }
+.iconAgent:before { content: "\e010"; }
+.iconMoney:before { content: "\e011"; }
+.iconClipboard:before { content: "\e012"; }
+.iconDocuments:before { content: "\e013"; }
+.iconMale:before { content: "\e014"; }
+.iconUsers:before { content: "\e015"; }
+.iconPrinter:before { content: "\e016"; }
+.iconGears:before { content: "\e017"; }
+.iconDownload:before { content: "\e018"; }
+.iconSearch:before { content: "\e019"; }
+.iconFemale:before { content: "\e020"; }
+.iconDelete:before { content: "\e021"; }
+.iconClose:before { content: "\e022"; }
+.iconEnvelope:before { content: "\e023"; }
+.iconFax:before { content: "\e024"; }
+.iconTick:before { content: "\e025"; }

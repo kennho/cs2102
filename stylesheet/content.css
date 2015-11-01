@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#content h1 { font-size: 2em; font-weight: 300; }
+#content h2 { font-size: 1.8em; font-weight: 300; }
+#content h3 { font-size: 1.6em; font-weight: 400; }
+#content h4 { font-size: 1.4em; font-weight: 400; }
+
+
+/*.actionBar { margin-bottom: 2em; padding: 0; }
+.actionBar h1 { display: inline-block; }*/
+
+.actionBar {
+
+	padding-bottom:20px;
+
+}
+
+#content header { margin-bottom: 2em; padding: 0; }
+#content h1 { display: inline-block; margin-right: 8px; }
+
+.tile {
+	background-color: rgb(222, 222, 222);
+	border-radius: 30px;
+	cursor: pointer;
+	display: inline-block;
+	height: 150px;
+	margin: 0 10px 20px 10px;
+	overflow: hidden;
+	text-align: center;
+	width: 150px;
+}
+
+.tile .icon {
+	display: block;
+	font-size: 3em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tile .icon i {
+	display: inline-block;
+	margin: 0.8em 0 0.3em 0;
+}
+
+.tile .text { display: block; }
+
+.textboxPanel {
+	margin-bottom: 16px;
+	text-align: left;
+}
+
+.textboxPanel input[type='textbox'], .textboxPanel input[type='password'] {
+	border: #BABABA solid 1px;
+	font-size: 30px;
+	font-weight: 300;
+	height: 50px;
+	margin: 4px 0;
+	width: 98%;
+}
+
+.buttonPanel {
+	display: inline-block;
+	padding: 10px 0;
+}
+
+.buttonPanel .button {
+	vertical-align: bottom;
+}
+
+.button {
+	background-color: #DADADA;
+	color: #848484;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 2px;
+	padding: 8px 12px;
+	vertical-align: top;
+}
+
+.button:hover, .button.selected {
+	background-color: #2EA2CC;
+	color: #FFFFFF;
+}
+
+.createButton {
+	background-color: #E0E0E0;
+	color: #0070C0;
+}
+
+.roundedButton {
+	border: #BABABA solid 1px;
+	border-radius: 6px;
+	color: #848484;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 10px;
+	font-size: 0.8em;
+	font-weight: 500;
+	margin-left: 10px;
+	width:100%;
+}
+table .icon { cursor: pointer; font-size: 14pt; }
+table tr { border: rgb(229, 229, 229) solid 1px; }
+table th { background-color: rgb(255, 255, 255); padding: 18px; }
+table td {
+	background-color: rgb(247, 247, 247);
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+}

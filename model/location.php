@@ -55,6 +55,10 @@ class Location {
 
 	public static function update_location($name, $new_name, $connection) {
 
+		$statement = $connection->prepare("UPDATE location set location = ? WHERE location = ?");
+
+		$statement->bind_param("ss", $new_name, $name);
+		$statement->execute();
 
 	}
 

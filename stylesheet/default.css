@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+
+
+html, body {
+	background-color: rgb(241, 241, 241);
+	color: #55534f;
+	font-family: 'Open Sans', Century Gothic, Arial, Sans-serif;
+	font-weight: 300;
+	width: 100%;
+}
+
+main {
+	display: block;
+	padding-left: 190px;
+	vertical-align: top;
+}
+
+.floatLeft { float: left; }
+.floatRight { float: right; }
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+.screenResolution {
+	min-width: 960px;
+	width: 100%;
+}
+
+#sidebar .strip:hover, #sidebar .strip.selected { background-color: rgb(0, 116, 162); }
+#sidebar .strip.title:hover { background-color: rgb(13, 13, 13); }
+
+.strip {
+	cursor: pointer;
+	display: inline-block;
+	padding: 10px;
+}
+
+.strip.title {
+	font-weight: 500;
+	padding-bottom: 0;
+	padding-top: 20px;
+}
+
+.strip .icon { margin-right: 4px; }
+
+#statusBar {
+	background-color: rgb(13, 13, 13);
+	color: rgb(255, 255, 255);
+	font-size: 14px;
+	width: 100%;
+}
+
+#statusBar a {
+
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+
+}
+
+#sidebar {
+	background-color: rgb(13, 13, 13);
+	color: rgb(255, 255, 255);
+	display: inline-block;
+	font-size: 14px;
+	margin-left: -190px;
+	width: 180px;
+}
+
+#sidebar a { 
+	color: rgb(255, 255, 255); 
+	text-decoration: none;
+}
+
+#sidebar .strip { display: block; }
+
+#content {
+	display: inline-block;
+	padding: 32px;
+	vertical-align: top;
+	min-width: 92%;
+}
+
+#overlay {
+	background-color: rgb(0, 0, 0, 0.4);
+	display: none;
+	height: 100%;
+	left: 0px;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 99;
+}
+
+#lightbox {
+	background-color: rgb(255, 255, 255);
+	border-radius: 10px;
+	box-shadow: 0px 0px 30px #FFFFFF;
+	color: black;
+	display: none;
+	left: 0;
+	top: 0;
+	min-width: 450px;
+	padding: 20px;
+	position: fixed;
+	z-index: 100;
+}
