@@ -53,7 +53,7 @@ class AuthenticationController {
 	public static function authenticate() {
 
 		if(empty($_SESSION["current_user"])) {
-
+			
 			$_SESSION["original_page"] = $_SERVER["REQUEST_URI"];
 			//header("Location: " . "http://" . $_SERVER["SERVER_NAME"] . "/kenneth/cs2102_admin/view/admin/authentication/index.php");
 			header("Location: " . "http://" . $_SERVER["SERVER_NAME"] . "/cs2102/view/admin/authentication/index.php");

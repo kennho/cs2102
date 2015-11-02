@@ -2,6 +2,11 @@
 
 <?php
 
+//require_once($_SERVER['DOCUMENT_ROOT'] . "/kenneth/cs2102_admin/model/admin.php");
+//require_once($_SERVER['DOCUMENT_ROOT'] . "/kenneth/cs2102_admin/model/database.php");
+//require_once($_SERVER['DOCUMENT_ROOT'] . "/kenneth/cs2102_admin/model/industry.php");
+//require_once($_SERVER['DOCUMENT_ROOT'] . "/kenneth/cs2102_admin/controller/admin/authentication/index.php");
+
 require_once($_SERVER['DOCUMENT_ROOT'] . "/cs2102/model/admin.php");
 require_once($_SERVER['DOCUMENT_ROOT'] . "/cs2102/model/database.php");
 require_once($_SERVER['DOCUMENT_ROOT'] . "/cs2102/model/industry.php");
@@ -79,7 +84,10 @@ $industries = Industry::get_all_industry($connection);
 								echo "<td>" . $industry->get_name() . "</td>"; 
 								echo "<td>";
 									echo "<span class='icon'><i aria-hidden='true' class='iconPencil'></i></span>";
-									echo "<span class='icon'><i aria-hidden='true' class='iconDelete'></i></span>";
+
+									echo "<a href='../../../controller/admin/index.php?action=delete&industry=" . $industry->get_name() . "'>";
+										echo "<span class='icon'><i aria-hidden='true' class='iconDelete'></i></span>";
+									echo "</a>";
 								echo "</td>";
 							echo "</tr>";
 

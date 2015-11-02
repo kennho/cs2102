@@ -2,6 +2,11 @@
 
 <?php
 
+//require_once($_SERVER['DOCUMENT_ROOT'] . "/kenneth/cs2102_admin/model/admin.php");
+//require_once($_SERVER['DOCUMENT_ROOT'] . "/kenneth/cs2102_admin/model/database.php");
+//require_once($_SERVER['DOCUMENT_ROOT'] . "/kenneth/cs2102_admin/model/employer.php");
+//require_once($_SERVER['DOCUMENT_ROOT'] . "/kenneth/cs2102_admin/controller/admin/authentication/index.php");
+
 require_once($_SERVER['DOCUMENT_ROOT'] . "/cs2102/model/admin.php");
 require_once($_SERVER['DOCUMENT_ROOT'] . "/cs2102/model/database.php");
 require_once($_SERVER['DOCUMENT_ROOT'] . "/cs2102/model/employer.php");
@@ -64,7 +69,7 @@ $employers = Employer::get_all_employer($connection);
 					<table>
 						<tr>
 							<th><input id="chkClass" type="checkbox"></th>
-							<th>Employer</th>
+							<th>Email</th>
 							<th>Address</th>
 							<th>Contact</th>
 							<th>Industry</th>
@@ -91,7 +96,10 @@ $employers = Employer::get_all_employer($connection);
 								echo "<td>" . $employer->get_license_no() . "</td>"; 
 								echo "<td>";
 									echo "<span class='icon'><i aria-hidden='true' class='iconPencil'></i></span>";
-									echo "<span class='icon'><i aria-hidden='true' class='iconDelete'></i></span>";
+
+									echo "<a href='../../../controller/admin/index.php?action=delete&email=" . $employer->get_email() . "'>";
+										echo "<span class='icon'><i aria-hidden='true' class='iconDelete'></i></span>";
+									echo "</a>";
 								echo "</td>";
 							echo "</tr>";
 

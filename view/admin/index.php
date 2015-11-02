@@ -52,43 +52,43 @@ AuthenticationController::authenticate();
 					</div>
 
 					<div class="tile">
-						<span class="icon"><i aria-hidden="true" class="iconMale"></i></span>
-						<span class="text">Class</span>
-					</div>
-
-					<div class="tile">
-						<span class="icon"><i aria-hidden="true" class="iconCalendar"></i></span>
-						<span class="text">Check Schedule</span>
+						<span class="icon"><i aria-hidden="true" class="iconPresentation"></i></span>
+						<span class="text">Industry</span>
 					</div>
 
 					<div class="tile">
 						<span class="icon"><i aria-hidden="true" class="iconPencil"></i></span>
-						<span class="text">Booking</span>
+						<span class="text">Location</span>
 					</div>
 
 					<div class="tile">
-						<span class="icon"><i aria-hidden="true" class="iconClipboard"></i></span>
-						<span class="text">Invoice</span>
+						<span class="icon"><i aria-hidden="true" class="iconBargraph"></i></span>
+						<span class="text">Nationality</span>
 					</div>
 
 					<div class="tile">
-						<span class="icon"><i aria-hidden="true" class="iconDocuments"></i></span>
-						<span class="text">Sales Report</span>
+						<span class="icon"><i aria-hidden="true" class="iconTrainees"></i></span>
+						<span class="text">Position</span>
+					</div>
+
+					<div class="tile">
+						<span class="icon"><i aria-hidden="true" class="iconTrainer"></i></span>
+						<span class="text">Employer</span>
 					</div>
 
 					<div class="tile">
 						<span class="icon"><i aria-hidden="true" class="iconCompany"></i></span>
-						<span class="text">Manage Company</span>
+						<span class="text">Job Applicant</span>
 					</div>
 
 					<div class="tile">
 						<span class="icon"><i aria-hidden="true" class="iconMoney"></i></span>
-						<span class="text">Manage Payment</span>
+						<span class="text">Advertise</span>
 					</div>
 
 					<div class="tile">
-						<span class="icon"><i aria-hidden="true" class="iconGears"></i></span>
-						<span class="text">Settings</span>
+						<span class="icon"><i aria-hidden="true" class="iconClipboard"></i></span>
+						<span class="text">Job Offer</span>
 					</div>
 				</div><!-- end content -->
 			</main>

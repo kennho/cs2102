@@ -2,6 +2,11 @@
 
 <?php
 
+//require_once($_SERVER['DOCUMENT_ROOT'] . "/kenneth/cs2102_admin/model/admin.php");
+//require_once($_SERVER['DOCUMENT_ROOT'] . "/kenneth/cs2102_admin/model/database.php");
+//require_once($_SERVER['DOCUMENT_ROOT'] . "/kenneth/cs2102_admin/model/job_applicant.php");
+//require_once($_SERVER['DOCUMENT_ROOT'] . "/kenneth/cs2102_admin/controller/admin/authentication/index.php");
+
 require_once($_SERVER['DOCUMENT_ROOT'] . "/cs2102/model/admin.php");
 require_once($_SERVER['DOCUMENT_ROOT'] . "/cs2102/model/database.php");
 require_once($_SERVER['DOCUMENT_ROOT'] . "/cs2102/model/job_applicant.php");
@@ -95,7 +100,10 @@ $job_applicants = JobApplicant::get_all_job_applicant($connection);
 								echo "<td>" . $job_applicant->get_location()->get_name() . "</td>"; 
 								echo "<td>";
 									echo "<span class='icon'><i aria-hidden='true' class='iconPencil'></i></span>";
-									echo "<span class='icon'><i aria-hidden='true' class='iconDelete'></i></span>";
+
+									echo "<a href='../../../controller/admin/index.php?action=delete&email=" . $job_applicant->get_email() . "'>";
+										echo "<span class='icon'><i aria-hidden='true' class='iconDelete'></i></span>";
+									echo "</a>";
 								echo "</td>";
 							echo "</tr>";
 
